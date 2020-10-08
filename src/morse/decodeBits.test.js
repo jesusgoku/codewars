@@ -27,7 +27,7 @@ describe('decodeBits', () => {
     expect(decodeMorse(decodeBits('111110000011111'))).toBe('I');
     expect(decodeMorse(decodeBits('11111100111111'))).toBe('M');
     expect(decodeMorse(decodeBits('111000111'))).toBe('I');
-    // expect(decodeMorse(decodeBits('111000000000111'))).toBe('EE'); // Should pass! Please fix the solution!
+    expect(decodeMorse(decodeBits('111000000000111'))).toBe('EE');
     expect(decodeMorse(decodeBits('111000111000111'))).toBe('S');
     expect(
       decodeMorse(
